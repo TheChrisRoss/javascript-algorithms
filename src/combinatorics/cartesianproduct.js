@@ -1,6 +1,6 @@
 (function (exports) {
   'use strict';
-  const cartesianProduct = (function () {
+  exports.cartesianProduct = (function () {
     let result;
 
     function cartesianProduct (sets, index, current) {
@@ -42,6 +42,5 @@
       return result;
     };
   } ());
-  exports.cartesianProduct = cartesianProduct;
 
 }((typeof window === 'undefined') ? module.exports : window));
